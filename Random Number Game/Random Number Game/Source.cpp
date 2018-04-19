@@ -14,7 +14,7 @@ int main()
 	int count = 1;
 
 	do{
-		std::cout << "Please pick a number between 1 - 100" << std::endl;
+		std::cout << "Please pick a number between 1 - 10" << std::endl;
 		std::cin >> numberChoice;
 		if (numberChoice > secret)
 		{
