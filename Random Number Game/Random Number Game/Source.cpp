@@ -1,4 +1,4 @@
-//Program: Random Number with Score
+//Program: Random Number Game With Levels
 //Date: 4-10-2018
 //Author: Daniel McGlasson
 
@@ -11,8 +11,11 @@ int main()
 {
 	int numberChoice;
 	int secret;
-	int count = 1;
+	int count = 0;
 
+	srand(time(NULL));
+
+	secret = rand() % 10 + 1;
 	do{
 		std::cout << "Please pick a number between 1 - 10" << std::endl;
 		std::cin >> numberChoice;
@@ -29,7 +32,7 @@ int main()
 		}
 	} while (numberChoice != secret);
 	std::cout << "Congrats! " << std::endl;
+	std::cout << "It took you " << count << " tries to get it correct." << std::endl;
 
 	system("pause");
 	return 0;
-}
