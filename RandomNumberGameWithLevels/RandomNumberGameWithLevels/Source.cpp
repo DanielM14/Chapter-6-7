@@ -111,6 +111,7 @@ int main()
 		break;
 	}
 	totalLevelCount = level1Count + level2Count + level3Count;
+	std::cout << "Congrats" << std::endl;
 	std::cout << "It took you " << totalLevelCount << " tries to get it correct." << std::endl;
 	system("pause");
 	return 0;

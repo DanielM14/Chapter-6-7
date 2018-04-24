@@ -1,4 +1,4 @@
-//Program: Random Number Game With Levels
+//Program: Higher or Lower
 //Date: 4-10-2018
 //Author: Daniel McGlasson
 
@@ -15,13 +15,13 @@ int main()
 
 	srand(time(NULL));
 
-	secret = rand() % 10 + 1;
+	secret = rand() % 100 + 1;
 	do{
 		std::cout << "Please pick a number between 1 - 10" << std::endl;
 		std::cin >> numberChoice;
 		if (numberChoice > secret)
 		{
-			std::cout << "The number you chose is to high!, guess agian loser" << std::endl;
+			std::cout << "The number you chose is to high!, guess agian ya panzey" << std::endl;
 			count = count + 1;
 			//count++//
 		}
@@ -32,7 +32,6 @@ int main()
 		}
 	} while (numberChoice != secret);
 	std::cout << "Congrats! " << std::endl;
-	std::cout << "It took you " << count << " tries to get it correct." << std::endl;
 
 	system("pause");
 	return 0;

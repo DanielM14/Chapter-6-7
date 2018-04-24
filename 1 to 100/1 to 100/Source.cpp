@@ -1,4 +1,4 @@
-//Program: Random Number Game With Levels
+//Program: Random Number Game 1 to 100
 //Date: 4-10-2018
 //Author: Daniel McGlasson
 
@@ -15,9 +15,9 @@ int main()
 
 	srand(time(NULL));
 
-	secret = rand() % 10 + 1;
+	secret = rand() % 100 + 1;
 	do{
-		std::cout << "Please pick a number between 1 - 10" << std::endl;
+		std::cout << "Please pick a number between 1 - 100" << std::endl;
 		std::cin >> numberChoice;
 		if (numberChoice > secret)
 		{
